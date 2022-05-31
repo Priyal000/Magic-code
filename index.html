@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+       <title>Magic Code</title>
+       <link rel="stylesheet" href="js.css">
+       <link rel="stylesheet" href="html.css" />
+       <link rel="stylesheet" type="text/css" href="page.css">
+       <link rel="stylesheet" type="text/css" href="style.css">
+       <link rel="shortcut icon" href="../favicon_io/android-chrome-192x192.png" <link rel="preconnect"
+              href="https://fonts.googleapis.com" />
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+       <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet" />
+       <style>
+              @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&family=Bebas+Neue&family=Inspiration&family=Poppins:wght@500&family=Rock+3D&display=swap");
+       </style>
+       <link rel="preconnect" href="https://fonts.googleapis.com" />
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+       <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet" />
+       <style>
+              @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&family=Bebas+Neue&family=Inspiration&family=Poppins:wght@500&family=Rock+3D&display=swap");
+       </style>
+       <link rel="preconnect" href="https://fonts.googleapis.com" />
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+       <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet" />
+       <link rel="preconnect" href="https://fonts.googleapis.com" />
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+       <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet" />
+       <style>
+              @import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+       </style>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+</head>
+<script src="https://unpkg.com/vue@next" defer></script>
+<script src="app.js" defer></script>
+
+<body>
+       <div id="allLinks">
+
+              <div class="firstPage">
+
+
+                     <header>
+                            <div class="h">
+                                   <a href="#" class="logo">Magic <div class="colo"
+                                                 style="color:rgb(240, 108, 0); display: inline-block;">code</div></a>
+                            </div>
+                            <ul>
+                                   <li><a @click="showHTML()" id="nav1" style="display: none;"
+                                                 href="#secondPage">Html</a></li>
+                                   <li><a @click="showCSS()" id="nav2" style="display: none;" href="#thirdPage">Css</a>
+                                   </li>
+                                   <li><a @click="showJS()" id="nav3" style="display: none;" href="#fourthPage">Javascript</a></li>
+                            </ul>
+                     </header>
+                     <div id="mainPage">
+                            <div class="main">
+                                   <p>web design &<br>
+                                   <div class="c" style="color: rgb(240, 108, 0);display: inline-block;">development
+                                   </div><br>
+                                   <div class="last" style="left: 3vw;">course</div>
+                                   </p>
+                            </div>
+                            <div class="inp">
+                                   <label style="color: #fff;">WRITE<div class="d" style="color: rgb(240, 108, 0);">YOUR
+                                                 NAME
+                                          </div>
+                                   </label>
+                                   <br>
+                                   <input v-model="FirstName" type="text" placeholder="FIRST NAME"
+                                          style="background-color: rgba(0, 0, 0, 0.132); color: rgba(255, 255, 255, 0.493); width: auto;">
+                                   <input v-model="LastName" type="text" placeholder="LAST NAME"
+                                          style="background-color: rgba(0, 0, 0, 0.132); color: rgba(255, 255, 255, 0.504); width: auto;">
+                            </div>
+                            <div class="container">
+                                   <a href="#">
+                                          <span v-if="FirstName !='' && LastName!=''" @click="ShowNav()">SUBMIT</span>
+                                   </a>
+                            </div>
+                     </div>
+
+
+
+              </div>
+
+              <br>
+              <br>
+              <div id="secondPage" style="display: none;">
+
+
+
+                     <div id="allTags" class="tags">
+
+                            <p class="heading">
+                                   <code class="codeSpan">&lt;html&gt;</code>
+                            </p>
+                            <p class="details">
+                                   The <code class="codeSpan">&lt;html&gt;</code> tag represents the root
+                                   of an HTML document. The <code class="codeSpan">&lt;html&gt;</code> tag
+                                   is the container for all other HTML elements (except for the
+                                   <a href="tag_doctype.asp">&lt;!DOCTYPE&gt;</a> tag).
+                            </p>
+                            <p class="details">
+                                   <strong>Note:</strong> You should always include the
+                                   <a href="att_global_lang.asp">lang</a> attribute inside the
+                                   <code class="codeSpan">&lt;html&gt;</code>
+                            </p>
+                            <hr />
+                            <hr />
+                            <p class="heading">
+                                   <code class="codeSpan">&lt;body&gt;</code>
+                            </p>
+                            <p class="details">
+                                   The <code class="codeSpan">&lt;body&gt;</code> element contains all the
+                                   contents of an HTML document, such as headings, paragraphs, images,
+                                   hyperlinks, tables, lists, etc. The
+                                   <code class="codespan">&lt;body&gt;</code> tag defines the document's
+                                   body.
+                            </p>
+                            <p class="details">
+                                   <strong>Note:</strong> There can only be one
+                                   <code class="codeSpan">&lt;body&gt;</code>
+                                   element in an HTML document.
+                            </p>
+                            <hr />
+                            <hr />
+                            <p class="heading">
+                                   <code class="codeSpan">&lt;head&gt;</code>
+                            </p>
+                            <p class="details">
+                                   The <code class="codeSpan">&lt;head&gt;</code> element is a container
+                                   for metadata (data about data) and is placed between the &lt;html&gt;
+                                   tag and the &lt;body&gt; tag.
+                            </p>
+                            <p class="details">
+                                   Metadata is data about the HTML document. Metadata is not displayed.
+                            </p>
+                            <p class="details">
+                                   Metadata typically define the document title, character set, styles,
+                                   scripts, and other meta information.
+                            </p>
+                            <p class="details">
+                                   The following elements can go inside the
+                                   <code class="codeSpan">&lt;head&gt;</code> element:
+                            </p>
+                            <ul>
+                                   <li>
+                                          <a href="tag_title.asp">&lt;title&gt;</a> (required in every HTML
+                                          document)
+                                   </li>
+                                   <li><a href="tag_style.asp">&lt;style&gt;</a></li>
+                                   <li><a href="tag_base.asp">&lt;base&gt;</a></li>
+                                   <li><a href="tag_link.asp">&lt;link&gt;</a></li>
+                                   <li><a href="tag_meta.asp">&lt;meta&gt;</a></li>
+                                   <li><a href="tag_script.asp">&lt;script&gt;</a></li>
+                                   <li><a href="tag_noscript.asp">&lt;noscript&gt;</a></li>
+                            </ul>
+                            <hr />
+                            <hr />
+                            <p class="heading">Link Tag</p>
+
+                            <p class="details">The <code class="codeSpan">&lt;link&gt;</code> tag defines the
+                                   relationship between the current document and an external
+                                   resource.</p>
+                            <p class="details">The <code class="codeSpan">&lt;link&gt;</code> tag is most often used to
+                                   link to
+                                   external style
+                                   sheets
+                                   or to add a <a href="html_favicon.asp">favicon</a> to your website.</p>
+                            <p class="details">The <code class="codeSpan">&lt;link&gt;</code> element is an empty
+                                   element, it
+                                   contains
+                                   attributes only.</p>
+                            <hr>
+                            <hr>
+                            <p class="heading">Headings</p>
+                            <p class="details">
+                                   HTML headings are titles or subtitles that you want to display on a
+                                   webpage.
+                            </p>
+                            <p class="details">
+                                   &lt;h1&gt;Heading 1&lt;/h1&gt;<br />
+                                   &lt;h2&gt;Heading 2&lt;/h2&gt;<br />
+                                   &lt;h3&gt;Heading 3&lt;/h3&gt;<br />&lt;h4&gt;Heading
+                                   4&lt;/h4&gt;<br />&lt;h5&gt;Heading
+                                   5&lt;/h5&gt;<br />&lt;h6&gt;Heading 6&lt;/h6&gt;
+                            </p>
+
+                            <p style="font-family: 'Secular One', sans-serif; text-align: center;">Try These All Heading
+                                   Tags
+                                   Yourself Below:
+                            </p>
+                            </p>
+                            <div class="headings" style="font-family: 'Secular One', sans-serif">
+                                   Opening Tag:<input placeholder="Enter Heading Opening Tag" v-model="headingTag"
+                                          type="text" /> Closing Tag:
+                                   <input placeholder="Enter Heading Closing Tag" v-model="headingTag2" type="text" />
+                                   <br />
+                                   <div class="result">
+                                          Your Name is:
+                                          <h1 v-if="headingTag=='<h1>' & headingTag2=='</h1>'" class="name">
+                                                 {{FirstName}}
+                                          </h1>
+                                          <h2 v-if="headingTag=='<h2>' & headingTag2=='</h2>'" class="name">
+                                                 {{FirstName}}
+                                          </h2>
+                                          <h3 v-if="headingTag=='<h3>' & headingTag2=='</h3>'" class="name">
+                                                 {{FirstName}}
+                                          </h3>
+                                          <h4 v-if="headingTag=='<h4>' & headingTag2=='</h4>'" class="name">
+                                                 {{FirstName}}
+                                          </h4>
+                                          <h5 v-if="headingTag=='<h5>' & headingTag2=='</h5>'" class="name">
+                                                 {{FirstName}}
+                                          </h5>
+                                          <h6 v-if="headingTag=='<h6>' & headingTag2=='</h6>'" class="name">
+                                                 {{FirstName}}
+                                          </h6>
+                                   </div>
+                            </div>
+                            <hr>
+                            <hr>
+                            <p class="heading">ParaGraph</p>
+                            <p class="details">The HTML <code class="codeSpan">&lt;p&gt;</code> element defines a
+                                   paragraph.
+                            </p>
+                            <p class="details">A paragraph always starts on a new line, and browsers automatically add
+                                   some
+                                   white space (a
+                                   margin) before and after a paragraph.</p>
+
+                            <p style="font-family: 'Secular One', sans-serif; text-align: center;">Try This ParaGraph
+                                   Tag
+                                   Yourself Below:</p>
+                            </p>
+                            <div class="headings" style="font-family: 'Secular One', sans-serif">
+
+
+                                   Opening Tag:<input placeholder="Enter ParaGraph Opening Tag" v-model="ParaTag"
+                                          type="text" /> Closing Tag:
+                                   <input placeholder="Enter ParaGraph Closing Tag" v-model="ParaTag2" type="text" />
+                                   <br>
+                                   Result:
+                                   <p style=" background-color: rgb(201, 251, 234);"
+                                          v-if="ParaTag=='<p>' & ParaTag2=='</p>'">
+                                          {{FirstName}}{{LastName}} {{paragraph}}
+                                   </p>
+
+                            </div>
+                            <hr>
+                            <hr>
+                            <p class="heading">Span Tag</p>
+                            <p class="details">The <code class="codeSpan">&lt;span&gt;</code> tag is an inline container
+                                   used
+                                   to
+                                   mark up a part of a text, or a part of a document.</p>
+                            <p class="details">The <code class="codeSpan">&lt;span&gt;</code> tag is easily styled by
+                                   CSS or
+                                   manipulated with JavaScript
+                                   using the class or id attribute.</p>
+                            <p class="details">The <code class="codeSpan">&lt;span&gt;</code> tag is much like the
+                                   <a href="tag_div.asp">&lt;div&gt;</a> element, but &lt;div&gt; is a block-level
+                                   element and
+                                   <code class="codeSpan">&lt;span&gt;</code> is an inline element.
+                            </p>
+
+                            <p style="font-family: 'Secular One', sans-serif; text-align: center;">Try This Span Tag
+                                   Yourself
+                                   Below:</p>
+                            <div class="headings" style="font-family: 'Secular One', sans-serif">
+                                   Opening Tag:<input placeholder="Enter Heading Opening Tag" v-model="SpanTag"
+                                          type="text" />
+                                   Closing Tag:
+                                   <input placeholder="Enter Heading Closing Tag" v-model="SpanTag2" type="text" />
+                                   <br>
+                                   Result: <span v-if="SpanTag=='<span>' & SpanTag2=='</span>'"
+                                          class="result">{{FirstName}}{{LastName}}
+                                          {{span}}</span>
+                            </div>
+
+                     </div>
+              </div>
+
+           <div style="display: none;" id="thirdPage">
+
+
+                     <div style="background-color: rgba(53, 53, 53, 0.86);" class="CssHead">
+                               <span style="--i:1">L</span>
+                            <span style="--i:2">E</span>
+                            <span style="--i:3">A</span>
+                            <span style="--i:4">R</span>
+                            <span style="--i:5">N</span>
+                            <span style="--i:6; color: rgb(182, 163, 139);">C</span>
+                            <span style="--i:7; color: rgb(182, 163, 139);">S</span>
+                            <span style="--i:8; color: rgb(182, 163, 139);">S</span>
+                     </div>
+                     <div class="mid">
+                     </div>
+                     <div class="cont">
+                            <p
+                                   style="font-size: 1rem; font-family: 'Libre Bodoni', serif; text-align: center;  color: rgb(134, 134, 134); padding: 1rem 1rem;">
+                                   Css
+                                   Is
+                                   The Beauty of Any
+                                   HTML Page</p>
+                            <hr>
+                            <hr>
+                            <button class="start-Btn"><a href="#CssCourse">Start Learning Css</a></button>
+                     </div>
+                     <hr>
+                     <div id="CssCourse" class="CssCourse">
+                            <h1
+                                   style="color: rgb(5, 29, 51); text-align: center; font-size: 3.5rem; font-family: 'Tapestry', cursive;">
+                                   Course
+                                   Started</h1>
+                            <hr>
+                            <span class="span"> CSS is the language we use to style an HTML document.</span>
+                            <br>
+                            <span class="span">CSS describes how HTML elements should be displayed.</span>
+                            <br>
+                            <span class="span">CSS attached in The Head Tag in HTML Template</span>
+                            <br>
+                            <br>
+                            <div>
+                                   <img class="selecterImg" src="img_selector.gif" alt="">
+                            </div>
+                            <br>
+                            <span class="span">The selector points to the HTML element you want to style.
+
+                                   The declaration block contains one or more declarations separated by semicolons.
+
+                                   Each declaration includes a CSS property name and a value, separated by a colon.
+
+                                   Multiple CSS declarations are separated with semicolons, and declaration blocks are
+                                   surrounded by curly
+                                   braces.</span>
+                            <hr>
+                            <h2
+                                   style="color: rgb(5, 29, 51); text-align: center; font-size: 3rem; font-family: 'Tapestry', cursive;">
+                                   Tags
+                            </h2>
+                            <br>
+                            <hr>
+                            <br>
+                            <p class="All_heads">Display</p>
+                            <p class="span">The <code class="w3-codespan">display</code> property specifies if/how an
+                                   element is
+                                   displayed.
+                            </p>
+                            <p class="span">Every HTML element has a default display value depending on what type
+                                   of element it is. The default display value for most elements is <code
+                                          class="codespan">block</code> or
+                                   <code class="codespan">inline</code>.
+                            </p>
+
+                            <h2 style="color: rgb(19, 51, 51); font-family: Arial, Helvetica, sans-serif;">Block-level
+                                   Elements</h2>
+                            <p class="span">A block-level element always starts on a new line and takes up the full
+                                   width available
+                                   (stretches out to the left and right as far as it can).</p>
+
+                            <div class="w3-theme-border" style="border-width:3px;border-style:solid;">
+                                   The &lt;div&gt; element is a block-level element.</div>
+
+                            <p class="span">Examples of block-level elements:</p>
+                            <ul>
+                                   <li class="codespan">&lt;div&gt;</li>
+                                   <li class="codespan">&lt;h1&gt; - &lt;h6&gt;</li>
+                                   <li class="codespan">&lt;p&gt;</li>
+                                   <li class="codespan">&lt;form&gt;</li>
+                                   <li class="codespan">&lt;header&gt;</li>
+                                   <li class="codespan">&lt;footer&gt;</li>
+                                   <li class="codespan">&lt;section&gt;</li>
+                            </ul>
+                            <br>
+
+                            <h2 style="color: rgb(19, 51, 51); font-family: Arial, Helvetica, sans-serif;">Inline
+                                   Elements</h2>
+                            <p class="span">An inline element does not start on a new line and only takes up as much
+                                   width as necessary.
+                            </p>
+
+                            <p class="span">This is <span class="w3-theme-border"
+                                          style="border-width:3px;border-style:solid;">an inline
+                                          &lt;span&gt;
+                                          element
+                                          inside</span> a paragraph.</p>
+
+                            <p class="span">Examples of inline elements:</p>
+                            <ul>
+                                   <li class="codespan">&lt;span&gt;</li>
+                                   <li class="codespan">&lt;a&gt;</li>
+                                   <li class="codespan">&lt;img&gt;</li>
+                            </ul>
+                            <p>There Are many Properties of Display like Block, Inline, None etc.</p>
+                            <p style="font-family: 'Secular One', sans-serif; text-align: center;">Try These Display
+                                   Properties Yourself
+                                   Below:
+                            </p>
+                            </p>
+                            <div class="headings" style="font-family: 'Secular One', sans-serif">
+
+
+                                   Display:<input placeholder="Enter display Tag" v-model="inputDisplay" type="text" />
+                                   <br>
+                                   Result: <p v-if="inputDisplay!=''" v-bind:style="{display:inputDisplay }">
+                                          {{FirstName}}{{}}</p>
+                                   <p v-if="inputDisplay!=''" v-bind:style="{display:inputDisplay }">{{LastName}}</p>
+
+                            </div>
+                            <br>
+                            <p class="All_heads">background-color</p>
+                            <br>
+                            <p class="span">background-color of any container</p>
+                            <br>
+                            <p style="font-family: 'Secular One', sans-serif; text-align: center;">Try background-color
+                                   Yourself
+                                   Below:
+                            </p>
+                            </p>
+                            <div class="headings" style="font-family: 'Secular One', sans-serif">
+
+
+                                   background-color:<input placeholder="Enter background-color"
+                                          v-model="inputbackGroundColor" type="text" />
+                                   <br>
+                                   Result: <p v-if="inputbackGroundColor!=''"
+                                          v-bind:style="{backgroundColor:inputbackGroundColor }">
+                                          {{FirstName}}{{}}</p>
+
+                            </div>
+                            <br>
+                            <p class="All_heads">color</p>
+                            <p class="span">color of any Text</p>
+                            <br>
+                            <div class="headings" style="font-family: 'Secular One', sans-serif">
+
+
+                                   color:<input placeholder="Enter color" v-model="inputColor" type="text" />
+                                   <br>
+                                   Result: <p style="font-size: 2rem;" v-if="inputColor!=''"
+                                          v-bind:style="{color:inputColor }">
+                                          {{FirstName}}{{}}</p>
+
+                            </div>
+                            <br>
+                            <p class="All_heads">font-size</p>
+                            <p class="span">it Defines The Size of The Text</p>
+                            <br>
+                            <div class="headings" style="font-family: 'Secular One', sans-serif">
+
+
+                                   font-size:<input placeholder="Enter color" v-model="inputFontSize" type="text" />
+                                   <br>
+                                   Result: <p v-if="inputFontSize!=''" v-bind:style="{fontSize:inputFontSize }">
+                                          {{FirstName}}{{}}</p>
+
+                            </div>
+                     </div>
+              </div>
+
+
+
+              <div style="display: none;" id="fourthPage">
+                <button class="start-Btn"><a href="#JSCourse">Start Learning JavaScript</a></button>
+                <div>
+                    <video src="video/video_2022-05-01_22-24-48.mp4" autoplay loop muted style="display: inline-block;"></video>
+                </div>
+            </div>
+              
+       </div>
+
+
+</body>
+
+</html>

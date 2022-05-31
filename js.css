@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins: 300, 400, 500, 600, 700, 800,900&display=swap');
+*{
+       margin: 0;
+       padding: 0;
+       box-sizing:border-box;
+       font-family: 'Poppins', sans-serif;
+
+ }
+body{
+       min-height:100vh;
+       background-color: black;
+}
+section{
+       position: absolute;
+       width: 100%;
+       height: 100vh;
+       overflow: hidden;
+       top: -10vh;
+}
+section span{
+       position: absolute;
+       top:20vh ;
+}
+section video{
+       position: absolute;
+       top: 20vh;
+       left: 0;
+       width: 100%;
+       height: 60vh;
+       object-fit: cover;
+}
+section h2
+{
+position: absolute;
+top: 20vh;
+Left: 0;
+width: 100%;
+height: 70%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-transform: uppercase;
+font-size: 8rem;
+color: #fff;
+font-weight: 800;
+line-height: 0.85em;
+background: black; 
+mix-blend-mode: multiply;
+}
+header
+{
+position: relative;
+top: 0;
+Left: 0;
+width: 100%;
+padding: 30px 100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+cursor: pointer;
+}
+header .logo
+{
+color:#fff;
+font-weight: 700;
+text-decoration: none;
+font-size: 2em;
+text-transform: uppercase;
+Letter-spacing: 2px;
+}
+header ul
+{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+header ul li
+{
+List-style: none;
+margin-left: 20px;
+}
+header ul li a
+{
+text-decoration: none;
+padding: 6px 15px;
+color: #fff;
+}
+header ul li a:hover{
+       color:rgb(240, 108, 0) ;
+       transition: 0.5s;
+}
+.h:hover{
+       text-shadow: 5px 5px rgba(240, 108, 0, 0.696);
+       transition: 1s;
+}
+.colo:hover{
+       text-shadow: 3px 3px rgba(255, 255, 255, 0.748);
+       transition: 1s;
+} 

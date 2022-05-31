@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+  }
+  .head {
+    display: grid;
+    grid-template-columns: 7rem 9rem 7rem;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.875);
+  }
+  .third {
+    padding: 1rem 0.5rem;
+  }
+  .imgs {
+    width: 9rem;
+    margin: auto;
+    height: auto;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.875));
+  }
+  .hd {
+    color: rgb(1, 68, 1);
+    font-family: "Inspiration", cursive;
+  }
+  .quats {
+    font-family: "Baloo Bhai 2", cursive;
+    text-align: center;
+  }
+  .para {
+    font-size: 1.4rem;
+    text-align: center;
+    background: -webkit-linear-gradient(
+      rgba(255, 255, 255, 0.775),
+      rgb(142, 250, 174)
+    );
+    width: 98.8vw;
+    height: 87.4vh;
+  }
+  button {
+    margin-top: 3rem;
+    background-color: aqua;
+    border-radius: 7px;
+    font-size: 1.2rem;
+    font-family: "Alumni Sans Inline One", cursive;
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  button:hover {
+    background-color: rgb(7, 181, 181);
+  }
+  img {
+    width: 50rem;
+    filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.875));
+  }
+  td {
+    align-items: center;
+    font-size: 2rem;
+  }
+  .codeSpan {
+    -webkit-text-size-adjust: 100%;
+    line-height: 1;
+    box-sizing: inherit;
+    color: crimson;
+    background-color: rgba(222, 222, 222, 0.3);
+  }
+  .tags {
+    width: 100%;
+    height: 100%;
+  }
+  .heading {
+    -webkit-text-size-adjust: 100%;
+    line-height: 1;
+    box-sizing: inherit;
+    color: crimson;
+    background-color: rgba(222, 222, 222, 0.3);
+    text-align: center;
+    font-size: 2rem;
+  }
+  .details {
+    background-color: aquamarine;
+    font-family: Consolas, Menlo, "courier new", monospace;
+  }
+  .name {
+    text-transform: uppercase;
+  }
+  .headings {
+    border: 5px solid rgb(201, 251, 234);
+    border-radius: 15px;
+    height: auto;
+    text-align: center;
+  }
+  .result {
+    margin-top: 1rem;
+    /* display: inline-block; */
+    background-color: rgb(201, 251, 234);
+    width: auto;
+    height: auto;
+  }
+  #submit {
+    margin: 5px 5px;
+    position: relative;
+    left: 44.4%;
+    background-color: red;
+  }
+  #submitBtn {
+    background-color: red;
+    position: relative;
+    margin: 5px 5px;
+    left: 47%;
+  }
+  

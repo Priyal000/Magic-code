@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins: 300, 400, 500, 600, 700, 800,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.firstPage {
+  min-height: 100vh;
+  background: linear-gradient(#2b1055, #7597de);
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+}
+header ul li a:hover {
+  color: rgb(240, 108, 0);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container a {
+  position: relative;
+  width: 160px;
+  height: 60px;
+  display: inline-block;
+  background-color: #fff;
+  position: absolute;
+  top: 80vh;
+}
+.container a::before,
+.container a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(240, 108, 0);
+  transition: 0.5s;
+}
+.container a:hover:before {
+  inset: -3px;
+}
+.container a:hover:after {
+  inset: -3px;
+  filter: blur(10px);
+}
+.container a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: rgb(14, 21, 56);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  font-weight: bolder;
+}
+.container a span:hover {
+  transition: 1s;
+  color: rgb(240, 108, 0);
+}
+.main {
+  position: absolute;
+  top: 30vh;
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: solid;
+  font-weight: bolder;
+  left: 5vw;
+}
+.main:hover {
+  text-shadow: 10px 10px rgba(0, 0, 0, 0.468);
+  transition: 1s;
+}
+.inp {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 25vh;
+  left: 70vw;
+  background-color: rgba(95, 158, 160, 0.44);
+  width: 20vw;
+  height: 50vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  filter: blur(5px);
+}
+.inp:hover {
+  transition: 0.8s;
+  box-shadow: 7px 6px rgba(43, 43, 43, 0.266);
+  filter: blur(0px);
+}
+.h:hover {
+  text-shadow: 5px 5px rgba(240, 108, 0, 0.696);
+  transition: 1s;
+}
+.colo:hover {
+  text-shadow: 3px 3px rgba(255, 255, 255, 0.748);
+  transition: 1s;
+}
